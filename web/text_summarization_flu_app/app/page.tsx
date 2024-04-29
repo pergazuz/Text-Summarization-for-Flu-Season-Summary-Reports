@@ -60,7 +60,7 @@ export default function Home() {
         </form>
           <div className="flex-1 ml-4 bg-white dark:bg-white shadow-md rounded-lg p-4 border border-gray-300 dark:border-gray-700">
             <h1 className="text-2xl font-semibold text-gray-800 dark:text-black mb-2 text-center">Summary</h1>
-            <p className="text-gray-600 dark:text-gray-400">{summary}</p>
+            <p className="text-gray-600 dark:text-black">{summary}</p>
           </div>
       </div>
     </main>
