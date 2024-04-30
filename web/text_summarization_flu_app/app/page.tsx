@@ -31,7 +31,7 @@ export default function Home() {
     setLoading(true);
     const result = await query({ inputs: inputText });
     if (result && result.length > 0) {
-      setSummary(result[0].generated_text);
+      setSummary(result[0].summary_text);
     } else {
       setSummary("No summary available.");
     }
