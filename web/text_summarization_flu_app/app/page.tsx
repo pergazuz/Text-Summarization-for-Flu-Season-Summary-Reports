@@ -5,7 +5,7 @@ import { useState, FormEvent } from "react";
 async function query(data: { inputs: string }): Promise<any> {
   try {
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/facebook/bart-large-cnn",
+      "https://api-inference.huggingface.co/models/PergaZuZ/cdc_influenza_bart-base-cnn",
       {
         headers: { Authorization: "Bearer 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" },
         method: "POST",
@@ -31,7 +31,7 @@ export default function Home() {
     setLoading(true);
     const result = await query({ inputs: inputText });
     if (result && result.length > 0) {
-      setSummary(result[0].summary_text);
+      setSummary(result[0].generated_text);
     } else {
       setSummary("No summary available.");
     }
