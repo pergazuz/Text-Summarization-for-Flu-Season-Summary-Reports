@@ -5,7 +5,7 @@ import { useState, FormEvent } from "react";
 async function query(data: { inputs: string }): Promise<any> {
   try {
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/PergaZuZ/cdc_influenza_pagasus-x-large",
+      "https://api-inference.huggingface.co/models/PergaZuZ/cdc_influenza_bart-base-cnn",
       {
         headers: { Authorization: "Bearer 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" },
         method: "POST",
